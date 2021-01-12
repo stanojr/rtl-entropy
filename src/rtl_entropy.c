@@ -673,6 +673,7 @@ int main(int argc, char **argv) {
 	      if (hash_loop) {
 		/* Get a key from discarded bits */
 		SHA512(hash_data_buffer, sizeof(hash_data_buffer), hash_buffer);
+		en = EVP_CIPHER_CTX_new();
 		/* use key to encrypt output */
 		/* AES_set_encrypt_key(hash_buffer, 128, &wctx); */
 		/* AES_encrypt(bitbuffer, bitbuffer_old, &wctx); */

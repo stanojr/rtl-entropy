@@ -42,6 +42,7 @@
 #include <pwd.h>
 #include <openssl/evp.h>
 #include <openssl/aes.h>
+#include <openssl/engine.h>
 
 #include "log.h"
 #include "util.h"
